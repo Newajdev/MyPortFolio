@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1 ,
+        "Name": "HTML",
+        "img": "../src/assets/html.png"
+    },
+    {
+        "id": 2 ,
+        "Name": "CSS",
+        "img": "../src/assets/css.png"
+    },
+    {
+        "id": 3 ,
+        "Name": "BOOTSTRAP",
+        "img": "../src/assets/bootstrap.png"
+    },
+    {
+        "id": 4 ,
+        "Name": "TAILWIND",
+        "img": "../src/assets/tailwind.png"
+    }
+]

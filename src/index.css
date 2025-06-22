@@ -2,19 +2,53 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@theme{
-  --color-base: #2B9C7F; 
-  --color-base-gray: #D9D9D9; 
+@theme {
+  --color-base: #2B9C7F;
+  --color-base-gray: #D9D9D9;
+  --color-image: url(../../assets/graph.png);
+  --animate-upDown: upDown 10s ease-in-out infinite alternate;
+  --animate-upDown2: upDown2 10s ease-in-out infinite alternate;
+
+  @keyframes upDown {
+     0%{
+      scale: 0.8;
+      position: absolute;
+      top: 100%;
+      transform: translateY(-110%)
+     }
+     100%{
+      scale: 1;
+      position: absolute;
+      top: 0%;
+     }
+  }
+
+  @keyframes upDown2 {
+    0%{
+      scale: 0.8;
+      position: absolute;
+      bottom: 100%;
+      transform: translateY(110%)
+    }
+    100%{
+      scale: 1;
+      position: absolute;
+      bottom: 0%;
+    }
+  }
+
+  
 }
 
-*{
-  font-family: "Poppins", sans-serif;
-}
 
-.Irish{
-  font-family: "Irish Grover", system-ui;
-}
+  * {
+    font-family: "Poppins", sans-serif;
+  }
 
-.active{
-color: #2B9C7F;
-}
+  .Irish {
+    font-family: "Irish Grover", system-ui;
+  }
+
+  .active {
+    color: #2B9C7F;
+  }
