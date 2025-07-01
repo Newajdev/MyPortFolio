@@ -11,10 +11,10 @@
 
   @keyframes upDown {
      0%{
-      scale: 0.8;
+      scale: 0.7;
       position: absolute;
       top: 100%;
-      transform: translateY(-110%)
+      transform: translateY(-130%)
      }
      100%{
       scale: 1;
@@ -51,4 +51,15 @@
 
   .active {
     color: #2B9C7F;
+  }
+
+  :hover.project .info{
+    height: 100%;
+    opacity: 1;
+
+  }
+  :hover.project .title{
+ 
+    opacity: 0;
+
   }

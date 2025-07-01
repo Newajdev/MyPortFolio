@@ -6,7 +6,7 @@ import Info from "./info";
 const About_Me = () => {
     return (
         <div >
-            <Title Name={'About Me'}></Title>
+            <Title Name={'About Me'} Style={'white'}></Title>
             <p className="text-xl font-medium text-white text-justify flex flex-col leading-8 mt-9">Hi, I’m a passionate MERN Stack Developer with a strong foundation in building scalable, responsive, and user-centric web applications. I specialize in MongoDB, Express.js, React.js, and Node.js, and enjoy turning complex problems into clean, efficient solutions.
                 <span>Over the past few years, I’ve worked on a variety of projects — from dynamic e-commerce platforms to real-time applications — where I handled everything from front-end UI design to back-end API development and database management. I'm deeply focused on performance, security, and seamless user experience.</span>
                 <span>
