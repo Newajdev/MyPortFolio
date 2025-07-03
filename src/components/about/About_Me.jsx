@@ -18,8 +18,6 @@ const About_Me = () => {
                 <Info title={'E-mail :'} information={'newaj.up@gmail.com'}></Info>
                 <Info title={'WhatsApp :'} information={'+880 1972 406905'}></Info>
                 <Info title={'Location :'} information={'Chattogram, BD'}></Info>
-
-
             </div>
         </div>
     );

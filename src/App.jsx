@@ -3,6 +3,7 @@ import './App.css'
 import About_Me from './components/about/About_Me'
 import Container from './components/Container'
 import ContactMe from './components/contectme/ContactMe'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Navbar from './components/navbar/navbar'
 import My_Projects from './components/projects/My_Projects'
@@ -32,6 +33,8 @@ function App() {
       </Container>
 
       <ContactMe></ContactMe>
+
+      <Footer></Footer>
       
       
 
