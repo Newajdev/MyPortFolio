@@ -1,5 +1,5 @@
 import Title from "../Title";
-import Info from "./info";
+import Info from "info";
 
 
 
