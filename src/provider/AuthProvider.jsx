@@ -6,11 +6,10 @@ const AuthProvider = ({children}) => {
     const homeRef = useRef(null);
     const aboutRef = useRef(null);
     const projectRef = useRef(null);
-    const serviceRef = useRef(null);
     const contactRef = useRef(null);
     
     const Authinfo = {
-        homeRef,aboutRef,projectRef,serviceRef, contactRef
+        homeRef,aboutRef,projectRef, contactRef
     }
 
     return <AuthContext.Provider value={Authinfo}>{children}</AuthContext.Provider>

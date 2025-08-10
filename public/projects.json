@@ -1,0 +1,94 @@
+
+[
+    {
+        "_id": 1,
+        "projectName": "A Protfolio website",
+        "projectImg": "https://i.ibb.co.com/QFBgnSsw/Screenshot-2025-08-10-153852.png",
+        "category" : "Html & css",
+        "LiveLink": "https://newajdev.github.io/First-Portfolio-Design"
+    },
+    {
+        "_id": 2,
+        "projectName": "Basic Structure of Architect website",
+        "projectImg": "https://i.ibb.co.com/RTfqK8Ty/Screenshot-2025-08-10-154016.png",
+        "category" : "Html & css",
+        "LiveLink": "https://newajdev.github.io/G3-Architect--Website"
+    },
+    {
+        "_id": 3,
+        "projectName": "Basic Structure of Camera Shop website",
+        "projectImg": "https://i.ibb.co.com/9khVkCFx/Screenshot-2025-08-10-154341.png",
+        "category" : "Html & css",
+        "LiveLink": "https://newajdev.github.io/Camera-Shop"
+    },
+    {
+        "_id": 4,
+        "projectName": "A Bike Shop website",
+        "projectImg": "https://i.ibb.co.com/HDwC0tx3/Screenshot-2025-08-10-155315.png",
+        "category" : "Talwind CSS & BootStrap",
+        "LiveLink": "https://newajdev.github.io/Bike-Shop"
+    },
+    {
+        "_id": 5,
+        "projectName": "Tea House",
+        "projectImg": "https://i.ibb.co.com/qFyTwVdc/Screenshot-2025-08-10-155953.png",
+        "category" : "Talwind & BootStrap",
+        "LiveLink": "https://newajdev.github.io/tea-house"
+    },
+    {
+        "_id": 6,
+        "projectName": "Geomantric Calculation",
+        "projectImg": "https://i.ibb.co.com/sDgJQwp/Screenshot-2025-08-10-161839.png",
+        "category" : "JavaScript",
+        "LiveLink": "https://newajdev.github.io/geometry"
+    },
+    {
+        "_id": 7,
+        "projectName": "finsweet",
+        "projectImg": "https://i.ibb.co.com/B5h09ZSZ/Screenshot-2025-08-10-161425.png",
+        "category" : "Talwind & BootStrap",
+        "LiveLink": "https://newajdev.github.io/finsweet_bootstrap_project"
+    },
+    {
+        "_id": 8,
+        "projectName": "Key Board Game",
+        "projectImg": "https://i.ibb.co.com/B5h09ZSZ/Screenshot-2025-08-10-161425.png",
+        "category" : "JavaScript",
+        "LiveLink": "https://newajdev.github.io/alphabet-clash"
+    },
+    {
+        "_id": 9,
+        "projectName": "Guess My Number Game",
+        "projectImg": "https://i.ibb.co.com/zhBsV8HP/Screenshot-2025-08-10-162711.png",
+        "category" : "JavaScript",
+        "LiveLink": "https://newajdev.github.io/guessmynumber"
+    },
+    {
+        "_id": 10,
+        "projectName": "ToDo list",
+        "projectImg": "https://i.ibb.co.com/d08g5ZtB/Screenshot-2025-08-10-163124.png",
+        "category" : "JavaScript",
+        "LiveLink": "https://newajdev.github.io/TodoApp"
+    },
+    {
+        "_id": 11,
+        "projectName": "Order Mangement site",
+        "projectImg": "https://i.ibb.co.com/8D1LCQWJ/Screenshot-2025-08-10-163635.png",
+        "category" : "React",
+        "LiveLink": "https://recipe-calories-zeta.vercel.app/"
+    },
+    {
+        "_id": 12,
+        "projectName": "Resturent Website",
+        "projectImg": "https://i.ibb.co.com/1YCszfY2/Screenshot-2025-08-10-164441.png",
+        "category" : "React",
+        "LiveLink": "https://bistro-resturent-1003c.web.app"
+    },
+    {
+        "_id": 13,
+        "projectName": "Innovate IT website",
+        "projectImg": "https://i.ibb.co.com/23PZvZzT/Screenshot-2025-08-10-160834.png",
+        "category" : "Html & css",
+        "LiveLink": "https://newajdev.github.io/citfirstproject"
+    }
+]

@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 
 const Navbar = () => {
-    const { homeRef, aboutRef, projectRef, serviceRef, contactRef } = useContext(AuthContext)
+    const { homeRef, aboutRef, projectRef, contactRef } = useContext(AuthContext)
 
     const hendleNavigate = ref => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -22,7 +22,6 @@ const Navbar = () => {
                     <ListItem hendleNavigate={hendleNavigate} ItemRef={homeRef} Name={'Home'} Style={"active"}></ListItem>
                     <ListItem hendleNavigate={hendleNavigate} ItemRef={aboutRef} Name={'About'}></ListItem>
                     <ListItem hendleNavigate={hendleNavigate} ItemRef={projectRef} Name={'Project'}></ListItem>
-                    <ListItem hendleNavigate={hendleNavigate} ItemRef={serviceRef} Name={'Service'}></ListItem>
                     <ListItem hendleNavigate={hendleNavigate} ItemRef={contactRef} Name={'Contact'}></ListItem>
                 </ul>
                 <div className='p-1 bg-transparent hover:bg-[#56F5CD] duration-1000 rounded-full'>

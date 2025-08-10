@@ -52,6 +52,7 @@
   .active {
     color: #2B9C7F;
   }
+  
 
   :hover.project .info{
     height: 100%;

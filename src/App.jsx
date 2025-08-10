@@ -13,7 +13,7 @@ import MySkills from './components/skills/MySkills'
 import { AuthContext } from './provider/AuthProvider'
 
 function App() {
-  const { homeRef, aboutRef, projectRef, serviceRef, contactRef } = useContext(AuthContext)
+  const { homeRef, aboutRef, projectRef, contactRef } = useContext(AuthContext)
 
   return (
     <>
@@ -46,10 +46,6 @@ function App() {
         </Container>
       </div>
 
-      {/* My Services Section */}
-      <div ref={serviceRef}>
-
-      </div>
 
       {/* Contact with Me section */}
       <div ref={contactRef}>
