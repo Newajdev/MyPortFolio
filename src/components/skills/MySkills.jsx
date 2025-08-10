@@ -11,7 +11,7 @@ import nextjs from '../../assets/nextjs.png'
 import sql from '../../assets/sql.png'
 import ex from '../../assets/ex.png'
 import mongobd from '../../assets/mongodb.png'
-import Title from "../Title";
+import TitleComp from "../TitleComp";
 
 
 const MySkills = () => {
@@ -19,7 +19,8 @@ const MySkills = () => {
     return (
         <div className="">
             <div className="mb-16">
-                <Title Name={'My Skills'} Style={'base'}></Title>
+                <TitleComp Name={'My Skills'} Style={'base'}/>
+                
             </div>
 
             <Marquee pauseOnHover  speed={30}>

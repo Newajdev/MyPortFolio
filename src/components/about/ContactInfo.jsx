@@ -1,4 +1,6 @@
-const Info = ({title, information}) => {
+
+
+const ContactInfo = ({title, information}) => {
     return (
         <div className="text-center">
             <h3 className="font-semibold text-lg text-[#E1FF00]">{title}</h3>
@@ -7,4 +9,4 @@ const Info = ({title, information}) => {
     );
 };
 
-export default Info;
+export default ContactInfo;
