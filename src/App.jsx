@@ -32,7 +32,8 @@ function App() {
       {/* about me section */}
       <div ref={aboutRef}>
         <div className='bg-[#215145]'>
-          <div className={`bg-[url(./src/assets/graph.png)] bg-repeat-round w-screen py-28`}><Container><About_Me></About_Me></Container></div>
+          <div className={`bg-[url(./src/assets/graph.png)] bg-repeat-round w-screen py-28`}><Container><About_Me></About_Me></Container>
+          </div>
         </div>
         <div className={`py-28 z-0`}>
           <MySkills></MySkills>
@@ -49,9 +50,15 @@ function App() {
 
       {/* Contact with Me section */}
       <div ref={contactRef}>
-        <ContactMe></ContactMe>
-
+        <div className='bg-[#215145]'>
+          <div className={`bg-[url(./src/assets/graph.png)] bg-repeat-round w-screen py-28`}>
+            <Container>
+              <ContactMe></ContactMe>
+            </Container>
+          </div>
+        </div>
       </div>
+
 
 
       <Footer></Footer>

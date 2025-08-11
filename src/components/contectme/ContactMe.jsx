@@ -3,63 +3,46 @@
 
 
 function ContactMe() {
-    const onSubmit = async (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
 
 
-        formData.append("access_key", "4c3e20c7-1f29-44df-8979-dd77a8f6ff22");
-
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
-        const res = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        }).then((res) => res.json());
-
-        if (res.success) {
-            alert("Wow so easy!");
-        }else{
-            alert('Somthing Wrong')
-        }
-    };
 
     return (
         <>
-            <div className="hero bg-base-200 min-h-screen">
-                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
-                        </p>
+            <div className="flex items-center">
+                <div className="w-[60%] px-10">
+                    <div className="w-[70%] text-white">
+                        <h3 className=" text-5xl font-bold  leading-16 mb-4">
+                            Have a Project in Mind? <br /> <spen className="text-[#E1FF00]">Let’s talk!</spen>
+                        </h3>
+                        <p>I’m always open to exciting ideas, collaborations, and creative challenges. Share your vision, and let’s bring it to life</p>
                     </div>
-                    <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <div className="card-body">
-                            <form onSubmit={onSubmit} className="fieldset">
 
-                                <label className="label">Your Name</label>
-                                <input type="Text" className="input" name="name" placeholder="Name" />
-
-                                <label className="label">Email</label>
-                                <input type="email" className="input" name="email" placeholder="Email" />
-
-                                <label className="label">Your bio</label>
-                                <textarea className="textarea h-24" name="message" placeholder="Bio"></textarea>
-                                <div className="label">Optional</div>
-
-
-                                <button className="btn btn-neutral mt-4" type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
+                <div className="w-[40%]">
+                    <div className="p-14 border-2 border-[#194338] rounded-3xl bg-[#2151457f]">
+                        <div>
+                        <h3 className="text-3xl font-bold text-white mb-4">Send inquiry</h3>
+                        <p className="text-white ">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+                    </div>
+                    <form className="flex flex-col gap-3 mt-6">
+                        <fieldset className="fieldset">
+                            <input type="text" className="input w-full" placeholder="Your name" />
+                        </fieldset>
+                        <fieldset className="fieldset">
+                            <input type="email" className="input w-full" placeholder="Email Address" />
+                        </fieldset>
+                        <fieldset className="fieldset">
+                            <input type="tel" className="input w-full" placeholder="WhatsApp" />
+                        </fieldset>
+                        <fieldset className="fieldset">
+                            <textarea rows={5} type="text" className="textarea h-24 w-full" placeholder="Your Message" />
+                        </fieldset>
+                        <input className="input bg-[#E1FF00] rounded-full mx-auto mt-6" type="submit" value="send your message" />
+                    </form>
+                    </div>
+
+                </div>
+
             </div>
         </>
     );
