@@ -18,10 +18,10 @@ const Header = () => {
                 <div className='relative'>
                     <img className='absolute -top-4 lg:-top-16 right-2/4 translate-x-2/4' src={Profile} alt="" />
                 </div>
-                <div className='relative hidden lg:block'>
-                    <div className='absolute top-32'>
-                        <img src={qoute} alt="" />
-                        <p className='w-[500px] text-xl font-semibold'>
+                <div className='relative'>
+                    <div className='absolute top-6 lg:top-32 lg:left-0 right-5 lg:block flex flex-col items-end'>
+                        <img className='rotate-180 lg:rotate-0 flex w-8' src={qoute} alt="" />
+                        <p className='w-[150px] lg:w-[500px] text-sm text-right lg:text-left lg:text-xl font-semibold'>
                             <ReactTyped strings={['I will Provide seamless MERN stack solutions,turning ideas into high-performing websites.']} typeSpeed={10} />
                             </p>
                     </div>
