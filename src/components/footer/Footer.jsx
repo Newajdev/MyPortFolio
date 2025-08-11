@@ -12,15 +12,15 @@ const Footer = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <footer className="flex justify-between">
-      <ul className='flex gap-6'>
+    <footer className="flex-col gap-6 lg:gap-0 flex lg:flex-row items-center lg:justify-between">
+      <ul className='flex gap-4 lg:gap-6'>
         <ListItem hendleNavigate={hendleNavigate} ItemRef={homeRef} Name={'Home'} Style={"active"}></ListItem>
         <ListItem hendleNavigate={hendleNavigate} ItemRef={aboutRef} Name={'About'}></ListItem>
         <ListItem hendleNavigate={hendleNavigate} ItemRef={projectRef} Name={'Project'}></ListItem>
         <ListItem hendleNavigate={hendleNavigate} ItemRef={contactRef} Name={'Contact'}></ListItem>
       </ul>
       <nav>
-        <div className="grid grid-flow-col gap-4 text-2xl">
+        <div className="flex gap-2 lg:gap-4 text-2xl">
           <a href="https://github.com/Newajdev" target="_blank"><FaGithub className="hover:text-base hover:cursor-pointer duration-500 " /></a>
           <a href="https://www.linkedin.com/in/muhammad-newaj" target="_blank"><FaLinkedin className="hover:text-base hover:cursor-pointer duration-500 " /></a>
           <a href="https://www.facebook.com/muhammadshalenewaj" target="_blank"><FaFacebook className="hover:text-base hover:cursor-pointer duration-500 " /></a>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved by <a className="text-base font-bold" href="newaj.up@gmail.com">Md Shale Newaj</a></p>
+        <p className="lg:block flex flex-col items-center">Copyright © {new Date().getFullYear()} - All right reserved by <a className="text-base font-bold" href="newaj.up@gmail.com">Md Shale Newaj</a></p>
       </aside>
     </footer>
   );

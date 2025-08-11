@@ -8,9 +8,9 @@ function ContactMe() {
 
     return (
         <>
-            <div className="flex items-center">
-                <div className="w-[60%] px-10">
-                    <div className="w-[70%] text-white">
+            <div className="flex items-center flex-col lg:flex-row">
+                <div className="text-center lg:text-left lg:w-[60%] px-10">
+                    <div className="lg:w-[70%] text-white">
                         <h3 className=" text-5xl font-bold  leading-16 mb-4">
                             Have a Project in Mind? <br /> <spen className="text-[#E1FF00]">Let’s talk!</spen>
                         </h3>
@@ -18,8 +18,8 @@ function ContactMe() {
                     </div>
 
                 </div>
-                <div className="w-[40%]">
-                    <div className="p-14 border-2 border-[#194338] rounded-3xl bg-[#2151457f]">
+                <div className="lg:w-[40%] p-6 lg:p-0">
+                    <div className="p-8 lg:p-14 border-2 border-[#194338] rounded-3xl bg-[#2151457f]">
                         <div>
                         <h3 className="text-3xl font-bold text-white mb-4">Send inquiry</h3>
                         <p className="text-white ">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>

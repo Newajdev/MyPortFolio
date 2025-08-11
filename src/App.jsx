@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className='z-50'>
+      <div className='z-50 hidden md:block'>
         <SideIcon></SideIcon>
       </div>
 
@@ -32,10 +32,10 @@ function App() {
       {/* about me section */}
       <div ref={aboutRef}>
         <div className='bg-[#215145]'>
-          <div className={`bg-[url(./src/assets/graph.png)] bg-repeat-round w-screen py-28`}><Container><About_Me></About_Me></Container>
+          <div className={`bg-[url('./src/assets/graph.png')] bg-repeat-round w-screen py-10 lg:py-28`}><Container><About_Me></About_Me></Container>
           </div>
         </div>
-        <div className={`py-28 z-0`}>
+        <div className={`py-10 lg:py-28 z-0`}>
           <MySkills></MySkills>
         </div>
       </div>
@@ -51,7 +51,7 @@ function App() {
       {/* Contact with Me section */}
       <div ref={contactRef}>
         <div className='bg-[#215145]'>
-          <div className={`bg-[url(./src/assets/graph.png)] bg-repeat-round w-screen py-28`}>
+          <div className={`bg-[url('./src/assets/graph.png')] bg-repeat-round w-screen py-10 lg:py-28`}>
             <Container>
               <ContactMe></ContactMe>
             </Container>

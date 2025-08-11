@@ -36,11 +36,11 @@ const My_Projects = () => {
     
 
     return (
-        <div className="my-20">
+        <div className="my-20 px-6 lg:px-0">
             <TitleComp Name={'My Projects'} Style={'base'} />
-            <p className="font-medium text-xl mt-6 w-[#986px] text-center leading-7">Here you’ll find a collection of personal and client projects, each accompanied by a detailed case study highlighting the development process, challenges, and solutions.</p>
+            <p className="font-medium  lg:text-xl mt-6 w-[#986px] text-center leading-7">Here you’ll find a collection of personal and client projects, each accompanied by a detailed case study highlighting the development process, challenges, and solutions.</p>
 
-            <div className="flex justify-center items-center py-14 gap-6">
+            <div className="flex flex-wrap lg:flex-nowrap justify-center items-center py-8 lg:py-14 gap-6">
                 <PrimeBtn hendleProjects={hendleCategoris} Active={Active} Title={'All Projects'}></PrimeBtn>
                 <PrimeBtn hendleProjects={hendleCategoris} Active={Active} Title={'Html & CSS'}></PrimeBtn>
                 <PrimeBtn hendleProjects={hendleCategoris} Active={Active} Title={'Tailwind & Bootsrap'}></PrimeBtn>
