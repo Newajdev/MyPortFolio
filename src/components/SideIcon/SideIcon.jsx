@@ -11,12 +11,7 @@ const SideIcon = () => {
                 <a href="https://www.linkedin.com/in/muhammad-newaj" target="_blank"><FaLinkedin className="hover:text-base hover:cursor-pointer duration-500 "/></a>
                 <a href="https://www.facebook.com/muhammadshalenewaj" target="_blank"><FaFacebook className="hover:text-base hover:cursor-pointer duration-500 "/></a>
                 <a href="https://x.com/ms_newaj" target="_blank"><BsTwitterX className="hover:text-base hover:cursor-pointer duration-500 "/></a>
-                <a href="https://www.instagram.com/_mdnewaj_" target="_blank"><FaInstagramSquare className="hover:text-base hover:cursor-pointer duration-500 "/></a>
-    
-                
-                
-                
-                
+                <a href="https://www.instagram.com/_mdnewaj_" target="_blank"><FaInstagramSquare className="hover:text-base hover:cursor-pointer duration-500 "/></a> 
             </div>
         </div>
     );

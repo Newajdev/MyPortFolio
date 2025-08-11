@@ -18,9 +18,6 @@ const My_Projects = () => {
                 setBaseOnCatagory(data)
             })
     }, [])
-
-    // console.log("Base on Cat:",baseOnCatagory);
-    // console.log("All Products:",projects);
     
 
     const hendleCategoris = (category)  => {

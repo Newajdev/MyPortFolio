@@ -26,7 +26,9 @@ const Navbar = () => {
                 </ul>
                 <div className='p-1 bg-transparent hover:bg-[#56F5CD] duration-1000 rounded-full'>
                     <div className='p-1 bg-transparent hover:bg-[#45C7A6] duration-500 rounded-full'>
-                        <button className='flex items-center gap-3 bg-[#2B9C7F] px-3 py-2 rounded-full text-white text-xl font-semibold hover:cursor-pointer'><HiDownload />Download Resume</button>
+                        <a href="/cv.pdf" download={'Newaj_CV.pdf'}>
+                            <button className='flex items-center gap-3 bg-[#2B9C7F] px-7 py-2 rounded-full text-white text-xl font-semibold hover:cursor-pointer'><HiDownload />Download CV</button>
+                        </a>
                     </div>
                 </div>
             </div>

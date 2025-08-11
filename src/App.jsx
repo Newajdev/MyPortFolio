@@ -59,9 +59,12 @@ function App() {
         </div>
       </div>
 
-
-
+<div className='py-6'>
+  <Container>
       <Footer></Footer>
+</Container>
+</div>
+
 
 
 
