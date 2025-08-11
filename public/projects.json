@@ -4,28 +4,28 @@
         "_id": 1,
         "projectName": "A Protfolio website",
         "projectImg": "https://i.ibb.co.com/QFBgnSsw/Screenshot-2025-08-10-153852.png",
-        "category" : "Html & css",
+        "category" : "Html & CSS",
         "LiveLink": "https://newajdev.github.io/First-Portfolio-Design"
     },
     {
         "_id": 2,
         "projectName": "Basic Structure of Architect website",
         "projectImg": "https://i.ibb.co.com/RTfqK8Ty/Screenshot-2025-08-10-154016.png",
-        "category" : "Html & css",
+        "category" : "Html & CSS",
         "LiveLink": "https://newajdev.github.io/G3-Architect--Website"
     },
     {
         "_id": 3,
         "projectName": "Basic Structure of Camera Shop website",
         "projectImg": "https://i.ibb.co.com/9khVkCFx/Screenshot-2025-08-10-154341.png",
-        "category" : "Html & css",
+        "category" : "Html & CSS",
         "LiveLink": "https://newajdev.github.io/Camera-Shop"
     },
     {
         "_id": 4,
         "projectName": "A Bike Shop website",
         "projectImg": "https://i.ibb.co.com/HDwC0tx3/Screenshot-2025-08-10-155315.png",
-        "category" : "Talwind CSS & BootStrap",
+        "category" : "Tailwind & Bootsrap",
         "LiveLink": "https://newajdev.github.io/Bike-Shop"
     },
     {
@@ -88,7 +88,7 @@
         "_id": 13,
         "projectName": "Innovate IT website",
         "projectImg": "https://i.ibb.co.com/23PZvZzT/Screenshot-2025-08-10-160834.png",
-        "category" : "Html & css",
+        "category" : "Html & CSS",
         "LiveLink": "https://newajdev.github.io/citfirstproject"
     }
 ]

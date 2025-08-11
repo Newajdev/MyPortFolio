@@ -106,7 +106,7 @@ const MySkills = () => {
                         <div className="h-[250px] flex items-center relative">
                             <div className='w-40  inline-block animate-upDown2'>
                                 <h4 className='font-bold text-center'></h4>
-                                <img className='h-20 mx-auto' src="" alt="" />
+                                {/* <img className='h-20 mx-auto' src="" alt="" /> */}
                             </div>
                         </div>
                     
