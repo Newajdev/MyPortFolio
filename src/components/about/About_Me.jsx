@@ -15,7 +15,7 @@ const About_Me = () => {
 
             <div className=" grid grid-cols-1 lg:grid-cols-4 gap-4 mt-9">
                 <ContactInfo title={'name :'} information={'Md Shale Newaj'}></ContactInfo>
-                <ContactInfo title={'E-mail :'} information={'newaj.up@gmail.com'}></ContactInfo>
+                <ContactInfo title={'E-mail :'} information={'newaj.gra@gmail.com'}></ContactInfo>
                 <ContactInfo title={'WhatsApp :'} information={'+880 1972 406905'}></ContactInfo>
                 <ContactInfo title={'Location :'} information={'Chattogram, BD'}></ContactInfo>
             </div>
