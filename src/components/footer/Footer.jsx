@@ -1,35 +1,51 @@
-import { useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
-import ListItem from "../navbar/ListItem";
 import { FaFacebook, FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 
 const Footer = () => {
-  const { homeRef, aboutRef, projectRef, contactRef } = useContext(AuthContext)
+  
 
-  const hendleNavigate = ref => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  }
+  const navlinks = [
+    {
+      title: 'Works',
+      path: '/'
+    },
+    {
+      title: 'About',
+      path: '/about'
+    },
+    {
+      title: 'Contact',
+      path: '/contact'
+    },
+    {
+      title: 'Resume',
+      path: '/resume'
+    },
+  ]
   return (
-    <footer className="flex-col gap-6 lg:gap-0 flex lg:flex-row items-center lg:justify-between">
-      <ul className='flex gap-4 lg:gap-6'>
-        <ListItem hendleNavigate={hendleNavigate} ItemRef={homeRef} Name={'Home'} Style={"active"}></ListItem>
-        <ListItem hendleNavigate={hendleNavigate} ItemRef={aboutRef} Name={'About'}></ListItem>
-        <ListItem hendleNavigate={hendleNavigate} ItemRef={projectRef} Name={'Project'}></ListItem>
-        <ListItem hendleNavigate={hendleNavigate} ItemRef={contactRef} Name={'Contact'}></ListItem>
+    <footer className="flex-col gap-6 flex items-center lg:justify-between text-white pb-20">
+      <ul className='flex gap-x-6 text-xl'>
+        {
+          navlinks?.map(({ title, path }) =>
+            <li key={path}>
+              <NavLink to={path}>{title}</NavLink>
+            </li>
+          )
+        }
       </ul>
       <nav>
         <div className="flex gap-2 lg:gap-4 text-2xl">
-          <a href="https://github.com/Newajdev" target="_blank"><FaGithub className="hover:text-base hover:cursor-pointer duration-500 " /></a>
-          <a href="https://www.linkedin.com/in/muhammad-newaj" target="_blank"><FaLinkedin className="hover:text-base hover:cursor-pointer duration-500 " /></a>
-          <a href="https://www.facebook.com/muhammadshalenewaj" target="_blank"><FaFacebook className="hover:text-base hover:cursor-pointer duration-500 " /></a>
-          <a href="https://x.com/ms_newaj" target="_blank"><BsTwitterX className="hover:text-base hover:cursor-pointer duration-500 " /></a>
-          <a href="https://www.instagram.com/_mdnewaj_" target="_blank"><FaInstagramSquare className="hover:text-base hover:cursor-pointer duration-500 " /></a>
+          <a href="https://github.com/Newajdev" target="_blank"><FaGithub className="hover:text-orange-300 hover:cursor-pointer duration-500 " /></a>
+          <a href="https://www.linkedin.com/in/muhammad-newaj" target="_blank"><FaLinkedin className="hover:text-orange-300 hover:cursor-pointer duration-500 " /></a>
+          <a href="https://www.facebook.com/muhammadshalenewaj" target="_blank"><FaFacebook className="hover:text-orange-300 hover:cursor-pointer duration-500 " /></a>
+          <a href="https://x.com/ms_newaj" target="_blank"><BsTwitterX className="hover:text-orange-300 hover:cursor-pointer duration-500 " /></a>
+          <a href="https://www.instagram.com/_mdnewaj_" target="_blank"><FaInstagramSquare className="hover:text-orange-300 hover:cursor-pointer duration-500 " /></a>
         </div>
       </nav>
       <aside>
-        <p className="lg:block flex flex-col items-center">Copyright © {new Date().getFullYear()} - All right reserved by <a className="text-base font-bold" href="newaj.up@gmail.com">Md Shale Newaj</a></p>
+        <p className="lg:block flex flex-col items-center">Copyright © {new Date().getFullYear()} - All right reserved by <a className="font-bold" href="newaj.gra@gmail.com">Md Shale Newaj</a></p>
       </aside>
     </footer>
   );
