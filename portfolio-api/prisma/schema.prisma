@@ -1,0 +1,159 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model SiteSettings {
+  id          String   @id @default("default")
+  name        String
+  brand       String
+  role        String
+  tagline     String
+  email       String
+  phone       String?
+  whatsapp    String?
+  resumeUrl   String?
+  heroVideoId String?
+  seo         Json
+  updatedAt   DateTime @updatedAt
+}
+
+model HeroContent {
+  id          String   @id @default("default")
+  greeting    String
+  headline    String
+  positioning String
+  ctas        Json
+  updatedAt   DateTime @updatedAt
+}
+
+model AboutContent {
+  id        String   @id @default("default")
+  preview   Json
+  full      Json
+  updatedAt DateTime @updatedAt
+}
+
+model ValueBanner {
+  id        String   @id @default("default")
+  statement String
+  updatedAt DateTime @updatedAt
+}
+
+model NavLink {
+  id        String @id @default(cuid())
+  label     String
+  href      String
+  sortOrder Int    @default(0)
+}
+
+model SocialLink {
+  id        String @id @default(cuid())
+  platform  String
+  url       String
+  label     String
+  sortOrder Int    @default(0)
+}
+
+model SkillCategory {
+  id            String  @id
+  title         String
+  description   String
+  icon          String?
+  technologies  Json
+  sortOrder     Int     @default(0)
+  isPublished   Boolean @default(true)
+}
+
+model SkillsSection {
+  id          String   @id @default("default")
+  eyebrow     String
+  title       String
+  description String
+  updatedAt   DateTime @updatedAt
+}
+
+model Service {
+  id          String   @id
+  title       String
+  summary     String
+  description String
+  problems    Json
+  role        String
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(true)
+}
+
+model WorkflowStep {
+  id          String @id @default(cuid())
+  step        Int
+  title       String
+  description String
+  sortOrder   Int    @default(0)
+}
+
+model Project {
+  id               String   @id
+  slug             String   @unique
+  name             String
+  shortDescription String
+  thumbnail        String
+  category         String
+  techStack        Json
+  featured         Boolean  @default(false)
+  liveUrl          String?
+  githubUrl        String?
+  overview         String
+  caseStudy        String?
+  problem          String?
+  solution         String?
+  architecture     String?
+  keyFeatures      Json
+  challenges       Json
+  results          Json
+  gallery          Json
+  sortOrder        Int      @default(0)
+  isPublished      Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Testimonial {
+  id          String  @id @default(cuid())
+  name        String
+  role        String?
+  company     String?
+  quote       String
+  avatarUrl   String?
+  sortOrder   Int     @default(0)
+  isPublished Boolean @default(true)
+}
+
+model ContactMessage {
+  id        String        @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  status    MessageStatus @default(NEW)
+  createdAt DateTime      @default(now())
+}
+
+enum MessageStatus {
+  NEW
+  READ
+  ARCHIVED
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String?
+  createdAt    DateTime @default(now())
+}
